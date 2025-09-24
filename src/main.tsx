@@ -6,6 +6,6 @@ import App from './App.tsx';
 createRoot(document.getElementById('root')!).render(
   //TODO - Remove StrictMode in production!
   <StrictMode> 
-    <App />
+    <App/>
   </StrictMode>,
 );

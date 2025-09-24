@@ -33,23 +33,25 @@ export default defineConfig([
       'no-duplicate-case': 'error', // Disallow duplicate switch cases
       'no-dupe-keys': 'error', // Disallow duplicate keys in objects
       'no-unneeded-ternary': 'error', // Disallow unnecessary ternary expressions
-      semi: ['error', 'always'], // Require semicolons
+      'semi': ['error', 'always'], // Require semicolons
+      'react-refresh/only-export-components': 'warn', // Warn if non-components are exported
+      "@typescript-eslint/no-empty-object-type": "warn",
 
       // Replace camelcase with the TS-safe naming convention
-      camelcase: 'off',
+      'camelcase': 'off',
       '@typescript-eslint/naming-convention': [
         'error',
         {
-          selector: 'variableLike',
-          format: ['camelCase', 'PascalCase', 'UPPER_CASE']
+          'selector': 'variableLike',
+          'format': ['camelCase', 'PascalCase', 'UPPER_CASE']
         },
       ],
 
-      eqeqeq: 'error', // Require === and !==
+      'eqeqeq': 'error', // Require === and !==
       'no-cond-assign': 'warn', // Warn on assignments in conditionals
       'brace-style': 'error', // Enforce consistent brace style
       'no-array-constructor': 'error', // Disallow Array constructor
-      yoda: 'error', // Require Yoda conditions
+      'yoda': 'error', // Require Yoda conditions
       'no-nested-ternary': 'error', // Disallow nested ternaries
       'space-infix-ops': 'error', // Require spaces around operators
       'no-empty': 'warn', // Warn on empty blocks
