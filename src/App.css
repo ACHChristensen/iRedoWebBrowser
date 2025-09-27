@@ -1,22 +1,24 @@
-/*#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/**/#root {
   text-align: center;
 }
-*/
+
 .company-logo {
   height: 6em;
   padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
-.company-logo:hover {
-  filter: drop-shadow(0 0 2em #332772da);
+.marked:hover {
+  filter: drop-shadow(0 0 1em #86d0dd2f);
+  background-color: #86d0dd65;
+  content: white;
 }
-.company-logo.react:hover {
-  filter: drop-shadow(0 0 2em #6277eee3);
+
+.text-navbar-hover:hover{
+  filter:  #86d0dd8f;
+  opacity: 0.5;
 }
+
 /*
 @keyframes logo-spin {
   from {
