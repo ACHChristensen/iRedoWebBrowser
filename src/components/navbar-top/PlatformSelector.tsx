@@ -4,9 +4,10 @@ import { CiSearch } from "react-icons/ci";
 const MENUTIMES: string[] = [
   "Marketplace",
   "Inspiration",
-  "Nyheder",
-  "Kontakt"
+  "About us"
   ];
+
+const PLACEHOLDERFORSEARCH: string = "Search on website...";
 
 const PlatformSelector = () => {
   return (
@@ -22,7 +23,7 @@ const PlatformSelector = () => {
                 </Link>}
             </For>
             <Tabs.Trigger  value="Søg">
-              <Input type="search" className="text-navbar-hover marked" fontStyle="italic" textAlign="right" placeholder="Skriv din søgning her..." size="xs" variant="outline" width="10pc"/>
+              <Input type="search" className="text-navbar-hover marked" fontStyle="italic" placeholder={PLACEHOLDERFORSEARCH} size="xs" variant="outline" width="10pc"/>
               <Button variant="ghost" size="xs" >
                 <CiSearch/>
               </Button>
