@@ -5,7 +5,8 @@ import logoLight from "../../assets/iRedo-logo.png";
 import { useColorMode } from "../ui/color-mode";
 import { LuMoon, LuSun } from "react-icons/lu";
 import PlatformSelector from "./PlatformSelector";
-import LoginButton from "../LoginButton";
+import LoginButton from "../../pages/login/LoginButton";
+
 
 export const NavBar = () => {
     const { toggleColorMode, colorMode } = useColorMode();
